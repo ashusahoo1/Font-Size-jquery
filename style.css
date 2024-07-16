@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background for body */
+    color: #ffffff; /* Light text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 60%;
+    background-color: #1e1e1e; /* Dark background for container */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* White shadow for depth effect */
+    border-radius: 8px;
+    padding: 40px;
+  }
+  
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .range-slider {
+    width: calc(100% - 60px); /* Adjusted width to fit within .main */
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px; /* Increased height for better touch and click area */
+    background: linear-gradient(to right, #444 0%, #444 100%); /* Dark gray background with gradient */
+    outline: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.15s ease-in-out; /* Smooth transition */
+  }
+  
+  .range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #2e5396; /* Blue color for slider thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out; /* Smooth transition */
+  }
+  
+  .range-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #2e5396; /* Blue color for slider thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out; /* Smooth transition */
+  }
+  
+  .value {
+    font-size: 24px; /* Increased font size for better readability */
+    font-weight: 600; /* Adjusted font weight */
+  }
+  
+  .heading {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .text {
+    font-size: 32px; /* Larger font size for heading */
+    font-weight: 900; /* Bold font weight */
+    background: linear-gradient(to right, #ff4415, #ffee04);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-fill-color: transparent; */
+  }
+  
+  
